@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <curses.h>
-// #include <conio.h>
 
 int main (void){
 
@@ -10,13 +9,11 @@ N = 10;
 K = 0;
 LOC = 0;
 MAX = DATA[0];
-//clrscr();
 
 loop:
 K= K+1;
 	if(K==N){
-	printf("LOC = %d, MAX %d", LOC, MAX);
-	getch();
+	printf("LOC = %d, MAX %d\n", LOC, MAX);
 	return 0;
 }
 if (MAX<DATA[K]){
@@ -24,4 +21,5 @@ if (MAX<DATA[K]){
 	MAX=DATA[K];
 }
 goto loop;
+
 }
